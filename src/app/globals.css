@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #020617; /* Space dark */
+  color: #ffffff;
+}
+
+@layer utilities {
+  .liquid-glass {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-glow-cyan {
+    text-shadow: 0 0 10px rgba(0, 245, 255, 0.7);
+  }
+
+  .text-glow-emerald {
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.7);
+  }
+}
+
+/* Ensure smooth scrolling for the SPA feel */
+html {
+  scroll-behavior: smooth;
+}
